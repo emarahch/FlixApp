@@ -70,7 +70,22 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender:Any?){
+        //leaving screen and prepare next screen...loading details
+        
+        //Task 1, find the selcted movie
+        let cell=sender as! UITableViewCell
+        let indexPath = tableView.indexPath(for: cell)!
+        let movie = movies[indexPath.row]
+        //Task 2, pass the selected movie to the details view controller
+        let detailViewContoller = segue.destination as! MovieDetailsViewController
+        detailViewContoller.movie = movie
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+    }
+    
 
 
-}
+} //end of class
 

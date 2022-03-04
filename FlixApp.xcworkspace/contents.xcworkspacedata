@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/emarahcharles/Desktop/FlixApp/FlixApp/FlixApp/MovieGridViewController.swift">
+   </FileRef>
+   <FileRef
       location = "group:FlixApp.xcodeproj">
    </FileRef>
    <FileRef
